@@ -18,7 +18,7 @@ metadata:
 spec:
   targets:
   - Data:
-      kit: kat
+      ping: pong
     Kind: namespace
 ```
 
