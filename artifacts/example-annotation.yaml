@@ -1,0 +1,10 @@
+apiVersion: example.com/v1
+kind: Annotation
+metadata:
+  name: example-annotation
+  namespace: annotation-controller
+spec:
+  targets:
+  - Data:
+      ping: pong
+    Kind: namespace
