@@ -16,8 +16,8 @@ limitations under the License.
 package v1
 
 import (
-	v1 "gitlab.com/pickledrick/annotation-controller/src/pkg/apis/example.com/v1"
-	scheme "gitlab.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned/scheme"
+	v1 "github.com/fairfaxmedia/annotation-controller/src/pkg/apis/example.com/v1"
+	scheme "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/scheme"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

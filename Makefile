@@ -9,7 +9,7 @@ build-go:
 		cd src/cmd/controller && go build
 
 depend:
-		dep ensure
+		dep ensure -v
 
 clean: clean-vendor clean-go
 

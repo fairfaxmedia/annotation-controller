@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	examplecom "gitlab.com/pickledrick/annotation-controller/src/pkg/apis/example.com"
+	examplecom "github.com/fairfaxmedia/annotation-controller/src/pkg/apis/example.com"
 )
 
 // SchemeGroupVersion is group version used to register these objects

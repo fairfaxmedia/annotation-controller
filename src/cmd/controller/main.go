@@ -9,9 +9,9 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/pickledrick/annotation-controller/src/cmd/controller/signals"
-	clientset "gitlab.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned"
-	informers "gitlab.com/pickledrick/annotation-controller/src/pkg/client/informers/externalversions"
+	"github.com/fairfaxmedia/annotation-controller/src/cmd/controller/signals"
+	clientset "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned"
+	informers "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions"
 )
 
 var (

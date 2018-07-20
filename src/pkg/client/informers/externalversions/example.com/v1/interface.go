@@ -19,7 +19,7 @@ limitations under the License.
 package v1
 
 import (
-	internalinterfaces "gitlab.com/pickledrick/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
+	internalinterfaces "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.

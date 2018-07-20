@@ -36,10 +36,10 @@ import (
 	"k8s.io/client-go/tools/record"
 	"k8s.io/client-go/util/workqueue"
 
-	clientset "github.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned"
-	annotationscheme "github.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned/scheme"
-	informers "github.com/pickledrick/annotation-controller/src/pkg/client/informers/externalversions"
-	listers "github.com/pickledrick/annotation-controller/src/pkg/client/listers/example.com/v1"
+	clientset "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned"
+	annotationscheme "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/scheme"
+	informers "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions"
+	listers "github.com/fairfaxmedia/annotation-controller/src/pkg/client/listers/example.com/v1"
 )
 
 const controllerAgentName = "annotation-controller"

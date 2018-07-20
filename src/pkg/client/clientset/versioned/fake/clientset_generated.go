@@ -16,9 +16,9 @@ limitations under the License.
 package fake
 
 import (
-	clientset "gitlab.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned"
-	examplev1 "gitlab.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned/typed/example.com/v1"
-	fakeexamplev1 "gitlab.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned/typed/example.com/v1/fake"
+	clientset "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned"
+	examplev1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/typed/example.com/v1"
+	fakeexamplev1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/typed/example.com/v1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"
@@ -40,15 +40,7 @@ func NewSimpleClientset(objects ...runtime.Object) *Clientset {
 
 	fakePtr := testing.Fake{}
 	fakePtr.AddReactor("*", "*", testing.ObjectReaction(o))
-	fakePtr.AddWatchReactor("*", func(action testing.Action) (handled bool, ret watch.Interface, err error) {
-		gvr := action.GetResource()
-		ns := action.GetNamespace()
-		watch, err := o.Watch(gvr, ns)
-		if err != nil {
-			return false, nil, err
-		}
-		return true, watch, nil
-	})
+	fakePtr.AddWatchReactor("*", testing.DefaultWatchReactor(watch.NewFake(), nil))
 
 	return &Clientset{fakePtr, &fakediscovery.FakeDiscovery{Fake: &fakePtr}}
 }

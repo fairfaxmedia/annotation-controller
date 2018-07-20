@@ -19,16 +19,15 @@ limitations under the License.
 package v1
 
 import (
-	time "time"
-
-	example_com_v1 "gitlab.com/pickledrick/annotation-controller/src/pkg/apis/example.com/v1"
-	versioned "gitlab.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned"
-	internalinterfaces "gitlab.com/pickledrick/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
-	v1 "gitlab.com/pickledrick/annotation-controller/src/pkg/client/listers/example.com/v1"
+	example_com_v1 "github.com/fairfaxmedia/annotation-controller/src/pkg/apis/example.com/v1"
+	versioned "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/listers/example.com/v1"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
+	time "time"
 )
 
 // AnnotationInformer provides access to a shared informer and lister for

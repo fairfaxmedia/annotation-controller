@@ -16,8 +16,8 @@ limitations under the License.
 package v1
 
 import (
-	v1 "gitlab.com/pickledrick/annotation-controller/src/pkg/apis/example.com/v1"
-	"gitlab.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned/scheme"
+	v1 "github.com/fairfaxmedia/annotation-controller/src/pkg/apis/example.com/v1"
+	"github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
 )

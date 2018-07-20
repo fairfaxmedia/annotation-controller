@@ -16,7 +16,7 @@ limitations under the License.
 package fake
 
 import (
-	example_com_v1 "gitlab.com/pickledrick/annotation-controller/src/pkg/apis/example.com/v1"
+	example_com_v1 "github.com/fairfaxmedia/annotation-controller/src/pkg/apis/example.com/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

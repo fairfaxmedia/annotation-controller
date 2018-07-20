@@ -19,17 +19,16 @@ limitations under the License.
 package externalversions
 
 import (
-	reflect "reflect"
-	sync "sync"
-	time "time"
-
-	versioned "gitlab.com/pickledrick/annotation-controller/src/pkg/client/clientset/versioned"
-	example_com "gitlab.com/pickledrick/annotation-controller/src/pkg/client/informers/externalversions/example.com"
-	internalinterfaces "gitlab.com/pickledrick/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
+	versioned "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned"
+	example_com "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/example.com"
+	internalinterfaces "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
+	reflect "reflect"
+	sync "sync"
+	time "time"
 )
 
 type sharedInformerFactory struct {

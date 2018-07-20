@@ -19,8 +19,8 @@ limitations under the License.
 package example
 
 import (
-	v1 "gitlab.com/pickledrick/annotation-controller/src/pkg/client/informers/externalversions/example.com/v1"
-	internalinterfaces "gitlab.com/pickledrick/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/example.com/v1"
+	internalinterfaces "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.
