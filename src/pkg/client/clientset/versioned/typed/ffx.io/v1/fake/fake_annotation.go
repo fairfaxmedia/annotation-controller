@@ -31,9 +31,9 @@ type FakeAnnotations struct {
 	ns   string
 }
 
-var annotationsResource = schema.GroupVersionResource{Group: "example.com", Version: "v1", Resource: "annotations"}
+var annotationsResource = schema.GroupVersionResource{Group: "ffx.io", Version: "v1", Resource: "annotations"}
 
-var annotationsKind = schema.GroupVersionKind{Group: "example.com", Version: "v1", Kind: "Annotation"}
+var annotationsKind = schema.GroupVersionKind{Group: "ffx.io", Version: "v1", Kind: "Annotation"}
 
 // Get takes name of the annotation, and returns the corresponding annotation object, and an error if there is any.
 func (c *FakeAnnotations) Get(name string, options v1.GetOptions) (result *ffx_io_v1.Annotation, err error) {

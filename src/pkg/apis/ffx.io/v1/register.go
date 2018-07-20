@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	ffxio "github.com/fairfaxmedia/annotation-controller/src/pkg/apis/example.com"
+	ffxio "github.com/fairfaxmedia/annotation-controller/src/pkg/apis/ffx.io"
 )
 
 // SchemeGroupVersion is group version used to register these objects
