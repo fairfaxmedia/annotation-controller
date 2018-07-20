@@ -14,7 +14,7 @@ RUN apk add --no-cache \
 
 RUN curl -s -o /usr/local/bin/dep -L https://github.com/golang/dep/releases/download/v0.3.2/dep-linux-amd64 && chmod 755 /usr/local/bin/dep
 
-RUN make build
+RUN make depend build-go
 
 FROM alpine:3.6
 RUN apk add --no-cache \
