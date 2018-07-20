@@ -1,9 +1,9 @@
 apiVersion: apiextensions.k8s.io/v1beta1
 kind: CustomResourceDefinition
 metadata:
-  name: annotations.example.com
+  name: annotations.ffx.io
 spec:
-  group: example.com
+  group: ffx.io
   names:
     kind: Annotation
     listKind: AnnotationList
