@@ -39,7 +39,7 @@ import (
 	clientset "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned"
 	annotationscheme "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/scheme"
 	informers "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions"
-	listers "github.com/fairfaxmedia/annotation-controller/src/pkg/client/listers/example.com/v1"
+	listers "github.com/fairfaxmedia/annotation-controller/src/pkg/client/listers/ffx.io/v1"
 )
 
 const controllerAgentName = "annotation-controller"

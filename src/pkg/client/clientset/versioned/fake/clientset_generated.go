@@ -17,8 +17,8 @@ package fake
 
 import (
 	clientset "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned"
-	examplev1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/typed/example.com/v1"
-	fakeexamplev1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/typed/example.com/v1/fake"
+	examplev1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/typed/ffx.io/v1"
+	fakeexamplev1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/typed/ffx.io/v1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

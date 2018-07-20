@@ -20,7 +20,7 @@ package externalversions
 
 import (
 	versioned "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned"
-	example_com "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/example.com"
+	ffx_io "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/ffx.io"
 	internalinterfaces "github.com/fairfaxmedia/annotation-controller/src/pkg/client/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
@@ -122,9 +122,9 @@ type SharedInformerFactory interface {
 	ForResource(resource schema.GroupVersionResource) (GenericInformer, error)
 	WaitForCacheSync(stopCh <-chan struct{}) map[reflect.Type]bool
 
-	Example() example_com.Interface
+	Example() ffx_io.Interface
 }
 
-func (f *sharedInformerFactory) Example() example_com.Interface {
-	return example_com.New(f, f.namespace, f.tweakListOptions)
+func (f *sharedInformerFactory) Example() ffx_io.Interface {
+	return ffx_io.New(f, f.namespace, f.tweakListOptions)
 }

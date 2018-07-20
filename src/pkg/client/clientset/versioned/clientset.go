@@ -16,7 +16,7 @@ limitations under the License.
 package versioned
 
 import (
-	examplev1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/typed/example.com/v1"
+	examplev1 "github.com/fairfaxmedia/annotation-controller/src/pkg/client/clientset/versioned/typed/ffx.io/v1"
 	glog "github.com/golang/glog"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
